@@ -5,7 +5,9 @@ content-type: application/json
 {
     "name": "blackcat",
     "color": "black",
-    "birth_year": 2009
+    "birth_year": 2009,
+    "owner": 1
+
 }
 
 ###
