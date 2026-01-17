@@ -12,7 +12,7 @@ class AchievementSerializer(serializers.ModelSerializer):
         fields = ('id', 'name')
 
 class CatSerializer(serializers.ModelSerializer):
-    achievements = AchievementSerializer(many=True)  # Убрали read_only=True
+    achievements = AchievementSerializer(many=True, required=False)
     # Убрали owner = serializers.StringRelatedField(read_only=True)
     
     class Meta:
