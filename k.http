@@ -20,3 +20,27 @@ content-type: application/json
     "color": "black1",
     "birth_year": 2009
 }
+###
+GET http://127.0.0.1:8000/owners/
+###
+POST http://127.0.0.1:8000/owners/ HTTP/1.1
+content-type: application/json
+
+{
+    "first_name": "Иван",
+    "last_name": "Иванов"
+}
+
+### 
+POST http://127.0.0.1:8000/owners/ HTTP/1.1
+content-type: application/json
+[
+    {
+        "first_name": "Theodor",
+        "last_name": "Voland",
+        "cats": [
+            1,
+            2
+        ]
+    }
+]
