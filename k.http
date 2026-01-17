@@ -32,15 +32,16 @@ content-type: application/json
 }
 
 ### 
-POST http://127.0.0.1:8000/owners/ HTTP/1.1
+POST http://127.0.0.1:8000/cats/ HTTP/1.1
 content-type: application/json
-[
-    {
-        "first_name": "Theodor",
-        "last_name": "Voland",
-        "cats": [
-            1,
-            2
-        ]
-    }
-]
+
+{
+    "name": "Барсик",
+    "color": "White",
+    "birth_year": 2017,
+    "owner": 1,
+    "achievements": [
+        {"name": "поймал мышку"},
+        {"name": "разбил вазу"}
+    ]
+} 
