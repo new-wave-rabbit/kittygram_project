@@ -1,10 +1,9 @@
 from django.urls import path
 
-from cats.views import APICat, hello
+from cats.views import APICat
 
 urlpatterns = [
    path('cats/', APICat.as_view()),
-   path('hello/', hello),
 ]
 
 
